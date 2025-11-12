@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onessa — Digital Solutions & Marketing</title>
+  <style>
+    :root {
+      --accent: #0071e3; /* Apple blue */
+      --text-main: #1c1c1e;
+      --text-subtle: #6e6e73;
+      --bg-main: #f9f9fb;
+      --card-bg: #ffffffcc;
+      --shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'SF Pro Display', sans-serif;
+    }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 8%;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      color: var(--text-subtle);
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: var(--accent);
+    }
+
+    nav .contact-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav .contact-btn:hover {
+      background: #005bb5;
+    }
+
+    header {
+      text-align: center;
+      padding: 90px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: var(--text-subtle);
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 900px;
+      margin: 0 auto 100px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px 36px;
+      margin-top: 35px;
+      backdrop-filter: blur(25px);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ededed;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    li span {
+      color: var(--text-subtle);
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid #eaeaea;
+      padding: 50px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--text-subtle);
+      font-size: 0.95rem;
+    }
+
+    footer div {
+      flex: 1 1 300px;
+    }
+
+    footer h3 {
+      color: var(--text-main);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav ul {
+        display: none;
+      }
+      .section {
+        padding: 25px;
+      }
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      li span {
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Onessa</div>
+    <ul>
+      <li>Pricing - Masala Mantra</li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Onessa</h1>
+    <p>Modern Design • Smart Tech • Digital Growth</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Development & Setup</h2>
+      <ul>
+        <li>Website & Design <span>Included</span></li>
+        <li>Server Cost <span>₹1,000 (Non-Negotiable)</span></li>
+        <li>Domain Cost <span>₹1,000 (Non-Negotiable)</span></li>
+        <li>UI/UX Team <span>₹2,000</span></li>
+        <li>Tech Team <span>₹5,000</span></li>
+        <li>Service Charge <span>₹2,000</span></li>
+        <li>AI Features <span>Based on Need & Budget</span></li>
+        <li>Management <span>Free</span></li>
+        <li>Upgrades <span>2 Free</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Advertising & Reach</h2>
+      <ul>
+        <li>Advertising Type <span>Based on Need & Location</span></li>
+        <li>Target Area <span>Greater Noida</span></li>
+        <li>Budget Example <span>₹6,000</span></li>
+        <li>Estimated Reach <span>30,000 – 70,000 People</span></li>
+        <li>Initial Reach <span>~1,000 People</span></li>
+        <li>Referral Growth <span>Included (Organic)</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Social Media Management</h2>
+      <ul>
+        <li>Platforms <span>Instagram & Facebook</span></li>
+        <li>Monthly Uploads <span>15–20 Posts</span></li>
+        <li>Service Cost <span>₹4,000 / Month</span></li>
+        <li>Includes <span>Images, Reels, Short Videos</span></li>
+        <li>Goal <span>Brand Visibility & Engagement</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Location & Contact</h2>
+      <p><strong>Address:</strong> Knowledge Park III, Greater Noida, Near Amity University G. Noida Campus</p>
+      <p><strong>Company:</strong> Onessa</p>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h3>Onessa</h3>
+      <p>Creating intelligent digital experiences through technology, design, and strategy.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>📞 +91 97921 82280<br>
+      <p>📞 +91 70918 23115<br>  
+      📧 <a href="mailto:hello@sshantanu691@gmail.com">sshantanu691@gmail.com (your selected counsellor)</a><br>
+      🌐 <a href="https://onessa.vercel.app">www.onessa.agency</a></p>
+    </div>
+    <div>
+      <h3>Address</h3>
+      <p>Knowledge Park III, Greater Noida<br>
+         Near Amity University, G. Noida Campus</p>
+    </div>
+  </footer>
+</body>
+</html>
